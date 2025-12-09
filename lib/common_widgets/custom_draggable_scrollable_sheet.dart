@@ -2,12 +2,12 @@
 
 import 'package:flutter/material.dart';
 
-class CustomDraggableScrollableSheet extends StatefulWidget {
+class CustomDraggableScrollableSheetCommon extends StatefulWidget {
   final Widget Function(BuildContext, double) builder;
   final double minExtent;
   final double maxExtent;
 
-  const CustomDraggableScrollableSheet({
+  const CustomDraggableScrollableSheetCommon({
     super.key,
     required this.builder,
     this.minExtent = 0.2,
@@ -15,12 +15,12 @@ class CustomDraggableScrollableSheet extends StatefulWidget {
   });
 
   @override
-  _CustomDraggableScrollableSheetState createState() =>
-      _CustomDraggableScrollableSheetState();
+  _CustomDraggableScrollableSheetCommonState createState() =>
+      _CustomDraggableScrollableSheetCommonState();
 }
 
-class _CustomDraggableScrollableSheetState
-    extends State<CustomDraggableScrollableSheet> {
+class _CustomDraggableScrollableSheetCommonState
+    extends State<CustomDraggableScrollableSheetCommon> {
   late double _currentExtent;
 
   @override

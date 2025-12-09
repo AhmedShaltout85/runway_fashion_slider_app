@@ -29,7 +29,7 @@ class DetailScreen extends StatelessWidget {
             ),
           ),
 
-          CustomDraggableScrollableSheet(
+          CustomDraggableScrollableSheetCommon(
             builder: (context, extent) => Column(
               children: [
                 SizedBox(height: 10),
